@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.StatusBarHelpView android:paddingTop="@*android:dimen/status_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <View android:background="@drawable/tw_help_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/quick_setting_button_height" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/help_view_finger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tw_help_view_finger_land" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/help_view_button_help_bubble" android:background="@drawable/tw_help_view_button_help_bubble_text_land_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/quick_setting_button_height" android:layout_marginRight="4.0dip" android:layout_toRightOf="@id/help_view_finger">
+        <TextView android:textSize="19.0dip" android:textColor="#ffffffff" android:id="@id/button_help_bubble_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="14.0dip" android:text="@string/help_view_quick_panel_help_text" />
+        <View android:background="@drawable/tw_help_view_bubble_text_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/bubble_text_action_bar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <CheckBox android:gravity="center_vertical" android:id="@id/help_view_checkBox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/check_Box_description" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/warning_alert_check" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/help_view_button" android:layout_toRightOf="@id/help_view_checkBox" />
+            <Button android:textSize="17.0dip" android:textStyle="bold" android:textColor="#3c000000" android:id="@id/help_view_button" android:background="@*android:drawable/tw_popup_button_background_holo_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:minWidth="70.0dip" android:text="@*android:string/ok" android:shadowColor="#ffe1e1e1" android:shadowDx="1.0" android:shadowDy="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.StatusBarHelpView>

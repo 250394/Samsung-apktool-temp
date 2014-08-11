@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="mainFragement"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/scloud_samsung_cloud_service" android:key="category_samsungservices">
+        <Preference android:key="samsung_account" android:summary="@string/scloud_samsung" />
+        <Preference android:title="@string/scloud_data_sync" android:key="pref_dataSync" />
+        <Preference android:title="@string/scloud_back_up" android:key="pref_backUp" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/scloud_cloud_service_with_dropbox" android:key="category_dropbox">
+        <Preference android:title="@string/scloud_set_sync_account" android:key="pref_set_account" android:summary="@string/scloud_photo_video_music_document" />
+        <Preference android:key="dropbox_sync_account" android:summary="@string/scloud_dropbox" />
+        <Preference android:title="@string/scloud_storage_usage" android:key="pref_usage" />
+        <Preference android:title="@string/scloud_photos" android:key="pref_photos" android:summary="@string/scloud_off" />
+        <Preference android:title="@string/scloud_videos" android:key="pref_videos" android:summary="@string/scloud_off" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/scloud_account" android:key="category_account">
+        <Preference android:title="@string/scloud_remove_account" android:key="pref_remove_account" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToggleButton.RepeatDay" parent="@style/ToggleButton">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/sleeping_button_repeat</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">33.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ToggleButton.RepeatSunday" parent="@style/ToggleButton">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffbb0000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/sleeping_button_repeat</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">33.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

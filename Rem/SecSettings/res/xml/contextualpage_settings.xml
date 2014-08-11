@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/contextual_page"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:title="@string/contextual_page_s_pen" android:key="contextual_page_s_pen" android:summary="@string/contextual_page_s_pen_summary" />
+    <CheckBoxPreference android:title="@string/contextual_page_earphone" android:key="contextual_page_earphone" android:summary="@string/contextual_page_earphone_summary" />
+    <CheckBoxPreference android:title="@string/contextual_page_car_cradle" android:key="contextual_page_car_cradle" android:summary="@string/contextual_page_car_cradle_summary" />
+    <CheckBoxPreference android:title="@string/contextual_page_desk_cradle" android:key="contextual_page_desk_cradle" android:summary="@string/contextual_page_desk_cradle_summary" />
+</PreferenceScreen>

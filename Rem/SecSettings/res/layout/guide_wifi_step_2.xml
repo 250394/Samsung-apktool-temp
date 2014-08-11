@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/com.android.settings">
+    <com.sec.android.touchwiz.widget.TwTouchPunchView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="54.0dip" android:layout_marginBottom="54.0dip" touchwiz:punchshape="rectangle" touchwiz:punchshow="false" />
+    <RelativeLayout android:background="@drawable/step_bubble_01" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="54.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/guide_wifi_step_2_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="52.0dip" android:text="@string/guide_wifi_select_ap_summary" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageButton android:id="@id/guide_tip_title_button" android:background="@drawable/step_by_step_close_bg" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/step_by_step_close_press" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/step_by_step_close_bar" android:layout_alignLeft="@id/guide_tip_title_button" />
+    </RelativeLayout>
+</RelativeLayout>
