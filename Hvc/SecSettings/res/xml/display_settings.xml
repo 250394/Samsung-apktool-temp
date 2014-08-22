@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/tts_general_section_title" />
+    <com.android.settings.BrightnessPreference android:title="@string/brightness" android:key="brightness" android:widgetLayout="@layout/round_more_icon" android:dialogTitle="@string/brightness" />
+    <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/screen_timeout_values" />
+    <CheckBoxPreference android:title="@string/intelligent_sleep_title" android:key="intelligent_sleep" android:summary="@string/intelligent_sleep_summary" />
+    <CheckBoxPreference android:title="@string/intelligent_rotation_title" android:key="intelligent_rotation" android:summary="@string/intelligent_rotation_summary" />
+    <PreferenceScreen android:title="@string/intelligent_screen_title" android:key="intelligent_screen" android:summary="@string/intelligent_screen_summary" android:fragment="com.android.settings.IntelligentScreen" />
+    <CheckBoxPreference android:title="@string/accelerometer_title_second" android:key="accelerometer_second" />
+    <CheckBoxPreference android:title="@string/accelerometer_title" android:key="accelerometer" />
+    <CheckBoxPreference android:title="@string/sub_lcd_auto_lock" android:key="sub_lcd_auto_lock" android:summary="@string/sub_lcd_auto_lock_summary" />
+    <CheckBoxPreference android:title="@string/key_night_mode" android:key="key_night_mode" />
+    <ListPreference android:persistent="false" android:entries="@array/key_backlight_entries" android:title="@string/key_backlight" android:key="key_backlight" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/key_backlight_values" />
+    <ListPreference android:persistent="false" android:entries="@array/touch_key_light_entries" android:title="@string/key_backlight_duration" android:key="touch_key_light" android:summary="@string/key_backlight_duration_summary" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/touch_key_light_values" />
+    <PreferenceCategory android:title="@string/font" />
+    <com.android.settings.flipfont.FontListPreference android:title="@string/monotype_preference_title" android:key="MONOTYPE" android:summary="@string/monotype_preference_summary" android:widgetLayout="@layout/round_more_icon" />
+    <com.android.settings.FontSizeListPreference android:entries="@array/entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:widgetLayout="@layout/round_more_icon" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <PreferenceCategory android:title="@string/display_label" android:key="screen_category" />
+    <PreferenceScreen android:title="@string/screen_mode_setting" android:key="mode" android:summary="@string/screen_mode_summary">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.ModePreview" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:persistent="false" android:title="@string/display_saving" android:key="power_saving_mode" android:summary="@string/display_saving_mode_summary" />
+    <PreferenceCategory android:title="@string/more_settings" />
+    <ListPreference android:persistent="false" android:entries="@array/quick_launch_entries" android:title="@string/quick_launch_title" android:key="quick_launch" android:summary="@string/screen_quick_launch_summary" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/quick_launch_values" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/display_battery_percentage" android:key="display_battery_level" android:summary="@string/display_battery_percentage_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" />
+    <PreferenceScreen android:title="@string/g_sensor_title" android:key="g_sensor" android:summary="@string/g_sensor_summary">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.GSensorSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/Potato" android:key="Status_bar_Potato_settings" android:summary="@string/Potato_tita">
+        <intent android:targetPackage="com.potato.mariozawa.settings" android:action="android.intent.action.MAIN" android:targetClass="com.potato.mariozawa.settings.Main" />
+    </PreferenceScreen>
+</PreferenceScreen>

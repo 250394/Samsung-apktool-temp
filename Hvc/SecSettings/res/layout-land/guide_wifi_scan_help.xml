@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/com.android.settings">
+    <ImageView android:id="@id/hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_marginRight="135.0dip" android:src="@drawable/step_by_step_hand_01" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/content_description_hand" />
+    <com.sec.android.touchwiz.widget.TwTouchPunchView android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_alignRight="@id/hand" android:layout_alignParentTop="true" touchwiz:punchshape="rectangle" touchwiz:punchshow="false" />
+    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/guide_wifi_step_2_summary" android:background="@drawable/step_bubble_01" android:paddingLeft="20.0dip" android:paddingTop="17.0dip" android:paddingRight="20.0dip" android:paddingBottom="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-18.0dip" android:text="@string/guide_wifi_tap_scan" android:singleLine="false" android:layout_below="@id/hand" android:layout_alignRight="@id/hand" />
+</RelativeLayout>

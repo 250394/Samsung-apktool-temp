@@ -400,7 +400,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/Traffic;->mRunnable:Ljava/lang/Runnable;
 
-    const-wide/16 v2, 0xbb8
+    const-wide/16 v2, 0x3e8
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
